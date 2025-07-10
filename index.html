@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NextByte_Games - Studio Roblox</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0a150a, #002200);
+      font-family: 'Press Start 2P', cursive;
+      color: #00ff99;
+      user-select: none;
+    }
+
+    header {
+      background: #003300;
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 2.8rem;
+      color: #00ff99;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      border-bottom: 4px solid #00cc77;
+      text-shadow:
+        2px 2px 0 #005522,
+        4px 4px 0 #002200;
+      user-select: none;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 30px auto;
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    /* Sidebar */
+    aside {
+      flex: 1 1 250px;
+      background: #002200;
+      border: 4px solid #00cc77;
+      border-radius: 12px;
+      box-shadow:
+        0 0 15px #00cc77,
+        inset 0 0 8px #003300;
+      padding: 25px 20px;
+      height: fit-content;
+    }
+
+    aside h2 {
+      color: #00ff99;
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+      border-bottom: 3px solid #00ff99;
+      padding-bottom: 8px;
+      text-shadow:
+        1px 1px 0 #004422,
+        2px 2px 0 #001a00;
+      letter-spacing: 0.1rem;
+      user-select: text;
+    }
+
+    aside p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      user-select: text;
+    }
+
+    /* Main content */
+    main {
+      flex: 2 1 600px;
+    }
+
+    section {
+      background: #002200;
+      border: 4px solid #00cc77;
+      border-radius: 14px;
+      box-shadow:
+        0 0 15px #00cc77,
+        inset 0 0 8px #003300;
+      padding: 30px 25px;
+      margin-bottom: 30px;
+      text-align: left;
+      user-select: text;
+    }
+
+    h2 {
+      color: #00ff99;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      border-bottom: 3px solid #00ff99;
+      padding-bottom: 8px;
+      letter-spacing: 0.1rem;
+      text-shadow:
+        1px 1px 0 #004422,
+        2px 2px 0 #001a00;
+    }
+
+    .team-member {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+      padding-left: 12px;
+      position: relative;
+      cursor: default;
+      transition: color 0.3s ease;
+    }
+
+    .team-member::before {
+      content: "▌";
+      color: #00ff99;
+      position: absolute;
+      left: 0;
+      top: 2px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .team-member:hover {
+      color: #00cc77;
+    }
+
+    a {
+      color: #00ff99;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      user-select: text;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #00cc77;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 10px 0;
+    }
+
+    footer {
+      margin: 40px 0;
+      font-size: 0.85rem;
+      color: #004422;
+      text-align: center;
+      user-select: none;
+      text-shadow: 1px 1px 0 #002200;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        max-width: 90%;
+      }
+
+      aside, main {
+        flex: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    NextByte_Games
+  </header>
+
+  <div class="container">
+    <aside>
+      <h2>Aktualizacje</h2>
+      <p>🔥 Nowa gra "Youtuber Tycon" w produkcji!</p>
+      <p>🛠️ Naprawiliśmy błędy w "Troll Obby".</p>
+      <p>📢 Dołącz do nas na Discordzie: <a href="https://discord.gg/nextbyte" target="_blank" rel="noopener noreferrer">Link</a></p>
+    </aside>
+
+    <main>
+      <section id="team">
+        <h2>Zespół</h2>
+        <div class="team-member">Karol "Karolkk18" – Opiekun projektu</div>
+        <div class="team-member">Alan "Noovisek" – Właściciel</div>
+        <div class="team-member">Marcel "Warcel13" – Projektant poziomów</div>
+      </section>
+
+      <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Napisz do nas na: <a href="mailto:kontakt@nextbytegames.com">kontakt@nextbytegames.com</a></p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 NextByte_Games. Wszelkie prawa zastrzeżone.
+  </footer>
+</body>
+</html>
